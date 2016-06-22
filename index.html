@@ -112,7 +112,7 @@
       <img src="images/messages.png" alt="">
       <p>Messages</p>
     </li>
-    <li>
+    <li class="stat">
       <img src="images/statistic.png" alt="">
       <p>Statistics</p>
     </li>
@@ -128,144 +128,233 @@
 </div>
 
 <div id="main-area">
-  <div id="dashboard">
-    <ul >
-      <li>
-        <h2>Dashboard</h2>
-        <h4>Welcome</h4>
-      </li>
-      <li id="active">
-        <img src="images/tables_act.png" alt="">
-        <h5>Quick Menu Actions</h5>
-      </li>
-      <li>
-        <img src="images/stat_g.png" alt="">
-        <h5>Web Site Statistics</h5>
-      </li>
-      <li>
-        <img src="images/calend.png" alt="">
-        <h5>Calendar</h5>
-      </li>
+    <div id="dashboard">
+      <ul >
+        <li>
+          <h2>Dashboard</h2>
+          <h4>Welcome</h4>
+        </li>
+        <li id="active">
+          <img src="images/tables_act.png" alt="">
+          <h5>Quick Menu Actions</h5>
+        </li>
+        <li>
+          <img src="images/stat_g.png" alt="">
+          <h5>Web Site Statistics</h5>
+        </li>
+        <li>
+          <img src="images/calend.png" alt="">
+          <h5>Calendar</h5>
+        </li>
+      </ul>
+    </div>
+
+    <div id="quick_menu">
+     <ul>
+       <li>
+         <img src="images/quick_menu/add.png" alt=""></li>
+         <li>
+           <img src="images/quick_menu/stat.png" alt="">
+         </li>
+         <li>
+          <img src="images/quick_menu/media.png" alt="">
+        </li>
+        <li><img src="images/quick_menu/settings.png" alt="" data-toggle="tooltip"  data-placement="bottom" title="Layout Settings">
+        </li>
+        <li>
+          <img src="images/quick_menu/refr.png" alt="">
+        </li>
+        <li>
+          <img src="images/quick_menu/new.png" alt="">
+        </li>
+      </ul>
+    </div>
+
+    <div id="stat">
+     <ul class="stat-bar" >
+      <li class="active">Visitors Statistic</li>
+      <li>Orders Statistic</li>
+      <li>Users Statistic</li>
+
+      <div class="buttons">    
+        <a class="btn btn-default" role="button"> <img src="images/icons/config-grey.png" ></a>
+          <div class="onoffswitch" >
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="stat-switch" checked>
+            <label class="onoffswitch-label" for="myonoffswitch">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+           </label>
+          </div>
+      </div>
+
     </ul>
   </div>
 
-  <div id="quick_menu">
-   <ul>
-     <li>
-       <img src="images/quick_menu/add.png" alt=""></li>
-       <li>
-         <img src="images/quick_menu/stat.png" alt="">
-       </li>
-       <li>
-        <img src="images/quick_menu/media.png" alt="">
-      </li>
-      <li><img src="images/quick_menu/settings.png" alt="" data-toggle="tooltip"  data-placement="bottom" title="Layout Settings">
-      </li>
-      <li>
-        <img src="images/quick_menu/refr.png" alt="">
-      </li>
-      <li>
-        <img src="images/quick_menu/new.png" alt="">
-      </li>
+  <div id="charts" class="text-left" >
+    <h3>Today’s visitors</h3>
+
+    <img src="images/clock.png" alt=""> 
+    <h6>5:23 pm</h6> 
+    <br>
+    <div id="add">+</div>
+    <h1>16,481</h1>
+  </div>
+
+  <div id="comments">
+   <div class="heading">
+    <h4>Recent Comments</h4>
+    <div class="buttons">
+      <a class="btn btn-default" role="button"> <img src="images/more.png" ></a>
+    <div class="onoffswitch">
+      <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="comm-switch" checked>
+      <label class="onoffswitch-label" for="myonoffswitch">
+          <span class="onoffswitch-inner"></span>
+          <span class="onoffswitch-switch"></span>
+      </label>
+    </div>
+    </div>
+
+  </div>
+    <div class="comm">
+      <div class="wrap">
+          <img class="avatar" src="images/messages/1ava.png" alt="">
+
+        <div class="info">
+          <div class="name">John Stone</div>  
+          <div class="when">3 hours ago</div>
+        </div>
+        <a class="btn btn-default" role="button"> <img src="images/icons/reply.png" ></a>
+
+        <div class="ip">IP:  172.10.56.3</div>
+      </div>
+      <img class="online" src="images/online.png" alt="">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...
+        </div>
+      </div>
+    </div>
+
+    <div class="comm">
+      <div class="wrap">
+          <img class="avatar" src="images/messages/2ava.png" alt="">
+
+        <div class="info">
+          <div class="name">Anna Anderson</div>  
+          <div class="when">6 hours ago</div>
+        </div>
+        <a class="btn btn-default" role="button"> <img src="images/icons/reply.png" ></a>
+
+        <div class="ip">IP:  172.10.56.3</div>
+      </div>
+      <img class="online" src="images/offline.png" alt="">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        </div>
+      </div>
+
+      <div class="reply">
+      <div class="wrap">
+          <img class="avatar" src="images/messages/3ava.png" alt="">
+
+        <div class="info">
+          <div class="name">John Stone</div>  
+          <div class="when">2:36 pm</div>
+        </div>
+
+        <div class="ip">IP:  172.10.56.3</div>
+      </div>
+      <img class="online" src="images/online.png" alt="">
+      <div class="panel panel-default">
+        <div class="panel-body">
+         Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+        </div>
+      </div>
+    </div>
+    </div>
+
+      <ul class="pagination">
+      <li><a href="#">1</a></li>
+      <li class="active"><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#">6</a></li>
+      <li><a href="#">7</a></li>
+      <li><a href="#">...</a></li>
+      <li><a href="#">15</a></li>
+      <li><a href="#">&gt</a></li>
+    </ul>
+
+
+  </div>
+
+  <div id="calendar">
+  <div class="heading">
+    <h4>Calendar</h4>
+    <div class="date">
+      <img src="images/icons/calendar.png" alt="">
+      <span id="month">3</span>/
+      <span id="day">10</span>/
+      <span id="year">2013</span>
+    </div>
+  </div>
+    <div class="month">
+      <ul>
+        <li class="prev">❮</li>
+        <li class="next">❯</li>
+        <li style="text-align:center">
+          August<br>
+          <span style="font-size:18px">2016</span>
+        </li>
+      </ul>
+    </div>
+
+    <ul class="weekdays">
+      <li>Mo</li>
+      <li>Tu</li>
+      <li>We</li>
+      <li>Th</li>
+      <li>Fr</li>
+      <li>Sa</li>
+      <li>Su</li>
+    </ul>
+
+    <ul class="days">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li>
+      <li>9</li>
+      <li><span class="active">10</span></li>
+      <li>11</li>
+      <li>12</li>
+      <li>13</li>
+      <li>14</li>
+      <li>15</li>
+      <li>16</li>
+      <li>17</li>
+      <li>18</li>
+      <li>19</li>
+      <li>20</li>
+      <li>21</li>
+      <li>22</li>
+      <li>23</li>
+      <li>24</li>
+      <li>25</li>
+      <li>26</li>
+      <li>27</li>
+      <li>28</li>
+      <li>29</li>
+      <li>30</li>
+      <li>31</li>
     </ul>
   </div>
-
-  <div id="stat">
-   <ul class="stat-bar" >
-    <li class="active">Visitors Statistic</li>
-    <li>Orders Statistic</li>
-    <li>Users Statistic</li>
-
-    <div class="buttons">    
-      <img src="images/switch-off.png">
-      <a class="btn btn-default" role="button"> <img src="images/icons/config-grey.png" ></a>
-    </div>
-
-  </ul>
-</div>
-
-<div id="charts" class="text-left" >
-  <h3>Today’s visitors</h3>
-
-  <img src="images/clock.png" alt=""> 
-  <h6>5:23 pm</h6> 
-  <br>
-  <div id="add">+</div>
-  <h1>16,481</h1>
-</div>
-
-<div id="comments">
-
-  <h4>Recent Comments</h4>
-  <div class="buttons">
-    <a class="btn btn-default" role="button"> <img src="images/more.png" ></a>
-    <img src="images/switch-on.png">
-  </div>
-
-  <div class="comm">
-    <div class="wrap">
-        <img class="avatar" src="images/messages/1ava.png" alt="">
-
-      <div class="info">
-        <div class="name">John Stone</div>  
-        <div class="when">3 hours ago</div>
-      </div>
-      <a class="btn btn-default" role="button"> <img src="images/icons/reply.png" ></a>
-
-      <div class="ip">IP:  172.10.56.3</div>
-    </div>
-    <img class="online" src="images/online.png" alt="">
-    <div class="panel panel-default">
-      <div class="panel-body">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...
-      </div>
-    </div>
-  </div>
-
-  <div class="comm">
-    <div class="wrap">
-        <img class="avatar" src="images/messages/2ava.png" alt="">
-
-      <div class="info">
-        <div class="name">Anna Anderson</div>  
-        <div class="when">6 hours ago</div>
-      </div>
-      <a class="btn btn-default" role="button"> <img src="images/icons/reply.png" ></a>
-
-      <div class="ip">IP:  172.10.56.3</div>
-    </div>
-    <img class="online" src="images/offline.png" alt="">
-    <div class="panel panel-default">
-      <div class="panel-body">
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-      </div>
-    </div>
-
-    <div class="reply">
-    <div class="wrap">
-        <img class="avatar" src="images/messages/3ava.png" alt="">
-
-      <div class="info">
-        <div class="name">John Stone</div>  
-        <div class="when">2:36 pm</div>
-      </div>
-
-      <div class="ip">IP:  172.10.56.3</div>
-    </div>
-    <img class="online" src="images/online.png" alt="">
-    <div class="panel panel-default">
-      <div class="panel-body">
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-      </div>
-    </div>
-  </div>
-  </div>
-  
-</div>
-
-<div id="calendar">
-  <h4>Calendar</h4>
-</div>
 </div>
 
 </div>
