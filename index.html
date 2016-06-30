@@ -179,11 +179,10 @@
         <a class="btn btn-default" role="button"> <img src="images/icons/config-grey.png" ></a>
 
           <div class="onoffswitch" >
-              <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="stat-switch" checked>
-              <label class="onoffswitch-label" for="stat-switch">
-                <span class="onoffswitch-inner"></span>
-                <span class="onoffswitch-switch"></span>
-             </label>
+              <input type="checkbox" name="onoffswitch" class="checkbox" id="stat-switch" checked/>
+        <label class="onoffswitch-label" for="stat-switch"></label>
+
+                
           </div>
       </div>
      
@@ -202,95 +201,92 @@
   </div>
 
   <div id="comments">
-   <div class="heading">
-    <h4>Recent Comments</h4>
-    <div class="buttons">
-      <a class="btn btn-default" role="button"> <img src="images/more.png" ></a>
-    <div class="onoffswitch">
-    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="comm-switch" checked>
-    <label class="onoffswitch-label" for="comm-switch">
-        <span class="onoffswitch-inner"></span>
-        <span class="onoffswitch-switch"></span>
-    </label>
-    </div>
-    </div>
-
-  </div>
-    <div class="comm">
-      <div class="wrap">
-          <img class="avatar" src="images/messages/1ava.png" alt="">
-
-        <div class="info">
-          <div class="name">John Stone</div>  
-          <div class="when">3 hours ago</div>
-        </div>
-        <a class="btn btn-default" role="button"> <img src="images/icons/reply.png" ></a>
-
-        <div class="ip">IP:  172.10.56.3</div>
+     <div class="heading">
+      <h4>Recent Comments</h4>
+      <div class="buttons">
+        <a class="btn btn-default" role="button"> <img src="images/more.png" ></a>
+      <div class="onoffswitch">
+        <input type="checkbox" name="onoffswitch" class="checkbox" id="comm-switch" checked="checked" />
+        <label class="onoffswitch-label" for="comm-switch"></label>
       </div>
-      <img class="online" src="images/online.png" alt="">
-      <div class="panel panel-default">
-        <div class="panel-body">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...
-        </div>
       </div>
     </div>
+    <div id="comment-wrap" class=" ">
+      <div class="comm">
+        <div class="wrap">
+            <img class="avatar" src="images/messages/1ava.png" alt="">
 
-    <div class="comm">
-      <div class="wrap">
-          <img class="avatar" src="images/messages/2ava.png" alt="">
+          <div class="info">
+            <div class="name">John Stone</div>  
+            <div class="when">3 hours ago</div>
+          </div>
+          <a class="btn btn-default" role="button"> <img src="images/icons/reply.png" ></a>
 
-        <div class="info">
-          <div class="name">Anna Anderson</div>  
-          <div class="when">6 hours ago</div>
+          <div class="ip">IP:  172.10.56.3</div>
         </div>
-        <a class="btn btn-default" role="button"> <img src="images/icons/reply.png" ></a>
-
-        <div class="ip">IP:  172.10.56.3</div>
-      </div>
-      <img class="online" src="images/offline.png" alt="">
-      <div class="panel panel-default">
-        <div class="panel-body">
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-        </div>
-      </div>
-
-      <div class="reply">
-      <div class="wrap">
-          <img class="avatar" src="images/messages/3ava.png" alt="">
-
-        <div class="info">
-          <div class="name">John Stone</div>  
-          <div class="when">2:36 pm</div>
-        </div>
-
-        <div class="ip">IP:  172.10.56.3</div>
-      </div>
-      <img class="online" src="images/online.png" alt="">
-      <div class="panel panel-default">
-        <div class="panel-body">
-         Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+        <img class="online" src="images/online.png" alt="">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...
+          </div>
         </div>
       </div>
-    </div>
-    </div>
+
+      <div class="comm">
+        <div class="wrap">
+            <img class="avatar" src="images/messages/2ava.png" alt="">
+
+          <div class="info">
+            <div class="name">Anna Anderson</div>  
+            <div class="when">6 hours ago</div>
+          </div>
+          <a class="btn btn-default" role="button"> <img src="images/icons/reply.png" ></a>
+
+          <div class="ip">IP:  172.10.56.3</div>
+        </div>
+        <img class="online" src="images/offline.png" alt="">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+          </div>
+        </div>
+
+        <div class="reply">
+        <div class="wrap">
+            <img class="avatar" src="images/messages/3ava.png" alt="">
+
+          <div class="info">
+            <div class="name">John Stone</div>  
+            <div class="when">2:36 pm</div>
+          </div>
+
+          <div class="ip">IP:  172.10.56.3</div>
+        </div>
+        <img class="online" src="images/online.png" alt="">
+        <div class="panel panel-default">
+          <div class="panel-body">
+           Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+          </div>
+        </div>
+      </div>
+      </div>
 
       <ul class="pagination">
-      <li><a href="#">1</a></li>
-      <li class="active"><a href="#">2</a></li>
-      <li><a href="#">3</a></li>
-      <li><a href="#">4</a></li>
-      <li><a href="#">5</a></li>
-      <li><a href="#">6</a></li>
-      <li><a href="#">7</a></li>
-      <li><a href="#">...</a></li>
-      <li><a href="#">15</a></li>
-      <li><a href="#">&gt</a></li>
-    </ul>
+          <li><a href="#comment-wrap">1</a></li>
+          <li class="active"><a href="#">2</a></li>
+          <li><a href="#comment-wrap">3</a></li>
+          <li><a href="#comment-wrap">4</a></li>
+          <li><a href="#comment-wrap">5</a></li>
+          <li><a href="#comment-wrap">6</a></li>
+          <li><a href="#comment-wrap">7</a></li>
+          <li><a href="#comment-wrap">...</a></li>
+          <li><a href="#comment-wrap">15</a></li>
+          <li><a href="#comment-wrap">&gt</a></li>
+      </ul>
 
 
+    </div>
   </div>
-
   <div id="calendar">
   <div class="heading">
     <h4>Calendar</h4>

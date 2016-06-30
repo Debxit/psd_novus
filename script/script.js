@@ -1,16 +1,19 @@
 
-var main = function() {
+$(document).ready(function() {
 
-    $('[data-toggle="tooltip"]').tooltip(); 
 
-    $('.onoffswitch').on('click', function(){
-      if()
+  $('[data-toggle="tooltip"]').tooltip(); 
 
-    });
+   $('#stat .onoffswitch-label').click( function(){  
+     $('#charts').slideToggle("slow");
+  });
 
-};
+   $('#comments .onoffswitch-label').click( function(){  
+     $('#comment-wrap').slideToggle("slow");
+  });
 
-$(document).ready(main);
+});
+
 
 
 
