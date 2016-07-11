@@ -626,9 +626,7 @@ background-color: #8fd7d4;
 color: #3e3e3e;
 }
 
-.hidden{
- display: none;
-}
+
 
 #calendar{
   display: inline-block;
@@ -647,99 +645,88 @@ color: #3e3e3e;
   float: left;
 }
 #calendar .date{
-  padding:10px;
-  margin:10px 0;
+  margin: 12px 0;
+  width: 120px;
   float: right;
-  border: solid 1px #dddddd;
   border-radius: 10%;
  -webkit-border-radius: 10%;
  -moz-border-radius: 10% ;
  -o-border-radius: 10% ;
 }
+
 #calendar .date img{
   margin:-3px 3px 0 0 ;
   font: 12px Arial,sans-serif;
 }
 
+.input-group-addon{
+  padding: 7px 5px 10px 10px ;
+  background-color: #ffffff;
+  border-right: none;
+}
 
-.month {
-    padding: 12px 10px;
+.form-control{
+  border-left: none;
+  padding: 0px;
+}
+
+.datepicker{
+    color: #fff;
+    padding: 0px;
+    background: #fd8a78;
+  }
+
+
+.dow{
     width: 100%;
     height: 55px;
-    background: #fd8a78;
+     margin: 0;
+    padding: 10px 0;
+    background-color: #e37c6c;
     border-bottom: solid 1px #de7969;
+     font:  10px Arial,sans-serif;    
+    text-transform: uppercase;
 }
 
-.month ul {
 
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-
-}
-
-.month ul li {
-    color: white;
-    font-size:16px;
-}
-
-.month .prev {
-    float: left;
-}
-
-.month .next {
-    float: right;
-}
-
-.prev, .next{
+.table-condensed thead .prev,.table-condensed thead .next{
   background-color: #fd9381;
   border: solid 1px #de7969;
+  height: 27px;
+  width: 27px;
   border-radius: 10%;
  -webkit-border-radius: 10%;
  -moz-border-radius: 10% ;
  -o-border-radius: 10% ;
  padding:3px 8px;
 }
-.weekdays {
-    margin: 0;
-    padding: 10px 0;
-    background-color: #e37c6c;
+.table-condensed thead tr:nth-child(2){
+  height: 55px;
+  margin-bottom: 5px;
 }
 
-.weekdays li {
-    display: inline-block;
-    font:  10px Arial,sans-serif;    
-    text-transform: uppercase;
-    width: 12%;
-    color: #fff;
-    text-align: center;
-}
-
-.days {
-    padding: 10px 0;
+td {
     background: #fd8a78;
     margin: 0;
-}
-
-.days li {
-    list-style-type: none;
-    display: inline-block;
     width: 12%;
-    text-align: center;
     margin-bottom: 5px;
     font-size:12px;
-    color: #fff;
 }
 
-.days li .active {
+#calendar .input-group .datepicker table tr td.active{
     padding: 5px;
-    background: #e97f6f;
-    border: solid 1px #de7969;
+    background-color: #e97f6f !important; 
+    border: solid 1px #de7969 !important;
     border-radius: 10%;
    -webkit-border-radius: 10%;
    -moz-border-radius: 10% ;
    -o-border-radius: 10% ;
    padding:3px 8px;
+}
+
+.datepicker table tr td.today{
+  background-color: #de7868;
+  border-color: #de7969;
 }
 
 footer{

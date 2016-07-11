@@ -12,6 +12,11 @@ $(document).ready(function() {
      $('#comment-wrap').slideToggle("slow");
   });
 
+   $('#datetimepicker').datepicker({
+    orientation: "bottom auto",
+    multidateSeparator: "/",
+    todayHighlight: true
+  });
 });
 
 
